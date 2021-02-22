@@ -6,25 +6,19 @@
     color: #8b8a8a;
 }
 
-body {
-    background-color: gray;
-}
-
 .page-container-grid {
-    width: 100vw;
+    width: 100%;
     display: grid;
-    justify-content: center;
     background-color: gray;
     grid-template-areas: "a1 a1 a1 a1" "a2 a2 a2 a2" "a3 a3 a3 a3" "a4 a4 a4 a4" "a5 a5 a5 a5" "a6 a6 a6 a6" "a7 a7 a7 a7" "a8 a8 a8 a8";
 }
 
-header {
+.header {
     height: 66px;
-    display: flex;
-    justify-content: space-between;
     align-items: stretch;
     padding: 10px;
     background-color: white;
+    box-shadow:  1px 2px rgba(0, 0, 0, 0.2)
 }
 
 .logo-img {
@@ -33,7 +27,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 300;
     letter-spacing: 1.5px;
 }
@@ -52,7 +46,7 @@ header {
 
 .navigation ul li {
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .navigation ul li:hover {
@@ -61,44 +55,64 @@ header {
     color: white;
     transition: 0.6s;
 }
-
-.grid-line1 {
-    grid-area: a1;
-    margin-top: 40px;
-    ;
+.short-description .wrapper{
+    justify-content: space-evenly;
+}
+.short-description .wrapper p{
+    width: 90%;
+    align-self: center;
 }
 
+
+
+/* Classes para ajustes padrões de layout */
+.dflex-center{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width: 1100px;
+    flex-flow: row wrap;
+    display: flex;
+}
+
+
+
+
+/* CSS para definição de cada linha do GRID */
+.grid-line1 {
+    grid-area: a1;
+    padding-top: 40px;
+    background: url("images/bkg-img.jpg") center;
+    height: 570px;
+}
 .grid-line2 {
     grid-area: a2;
-    background-color: pink;
+    background-color: #F2F2F2;
+    height: 150px;
+    align-items: center;
 }
 
 .grid-line3 {
     grid-area: a3;
-    background-color: pink;
 }
 
 .grid-line4 {
     grid-area: a4;
-    background-color: pink;
 }
 
 .grid-line5 {
     grid-area: a5;
-    background-color: pink;
 }
 
 .grid-line6 {
     grid-area: a6;
-    background-color: pink;
 }
 
 .grid-line7 {
     grid-area: a7;
-    background-color: pink;
 }
 
 .grid-line8 {
     grid-area: a8;
-    background-color: pink;
 }
